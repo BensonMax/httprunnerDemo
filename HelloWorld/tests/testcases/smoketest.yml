@@ -1,0 +1,18 @@
+- config:
+    name: dsuite with a b
+    def: dsuite_ab($a, $b)
+    variables:
+        - a: 1
+        - b: 2
+
+- test:
+    name: test_cross_a_b{$a, $b}
+    api: api_baidu($a, $b)
+- test:
+    name: test_a{$a, $b}
+    variables:
+        - a: 1
+    api: api_baidu($a, $b)
+- test:
+    name: test_a{$a, $b}
+    api: api_baidu($a, d)

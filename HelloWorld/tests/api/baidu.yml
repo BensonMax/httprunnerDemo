@@ -1,0 +1,10 @@
+- api:
+    def: api_baidu($a, $b)
+    request:
+        url: http://baidu.com
+        method: GET
+        params:
+            a: $a
+            b: $b
+    validate:
+        - eq: [status_code, 200]
