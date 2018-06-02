@@ -95,4 +95,3 @@ After the running is over, you will get a testing report, which is in HTML forma
 $ open reports/smoketest/2018-02-09-16-38-14.html
 ```
 
-![](test-report.jpg)
